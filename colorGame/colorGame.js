@@ -104,7 +104,6 @@ function changeColor (color){
 function pickColor(){
     //select a number between 0-5
     var random = Math.floor(Math.random() * colors.length);
-    console.log(random);
     return colors[random];
 }
 
@@ -128,6 +127,5 @@ function randomColor (){
     var blue = Math.floor(Math.random() * 256);
 
     var completeColor = "rgb(" + red + ", " + green + ", " + blue +")";
-    console.log(completeColor);
     return completeColor;
 }
