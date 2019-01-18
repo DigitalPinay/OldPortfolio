@@ -1,0 +1,161 @@
+html {
+    width: 100%;
+}
+body {
+    font-family: 'ZCOOL XiaoWei', serif;
+    background-color: rgb(242, 250, 255);
+    width: 100%;
+}
+
+.gallery {
+    text-align: center;
+    color: rgb(51, 255, 255);
+    padding: 15px 0;
+    background: rgb(43, 27, 187);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(242, 250, 255), rgb(43, 27, 187), #0575E6, rgb(43, 27, 187),rgb(242, 250, 255));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(242, 250, 255), rgb(43, 27, 187), #0575E6, rgb(43, 27, 187),rgb(242, 250, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+button {
+    font-family: 'ZCOOL XiaoWei', serif;
+    background-color: #0575E6;
+    background: -webkit-linear-gradient(to bottom left, rgb(43, 27, 187), #0575E6, rgb(43, 27, 187));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom left, rgb(43, 27, 187), #0575E6, rgb(43, 27, 187)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(51, 255, 255);
+}
+
+.button {
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#banner {
+    border-radius: 25px;
+    display: flex;
+    font-size: 75px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    border: 15px ridge rgb(43, 27, 187);
+    width: 600px;
+    height: 200px;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.2);
+    background-image: url('images/MOUSE2.JPG');
+    background-position: center;
+}    
+
+.projects-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.project-item {
+    display: flex;
+    width: 450px;
+    height: 200px;
+    align-items: flex-start;
+    
+}
+.project-left {
+    flex: initial;
+}
+
+.project-image {
+    width: 150px;
+    border: 1px solid #000;
+    background-color: white;
+}
+
+.project-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.description {
+    padding: 0 15px;
+}
+
+.exampleType {
+    font-style: oblique;
+}
+
+.descHeader {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.projectView {
+    display: flex;
+    width: 160px;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation-name: modalOpen;
+    animation-duration: 1s; 
+}
+
+.modal-content {
+    background-color: #232323;
+    margin: 20px auto;
+    width: 700px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+
+.modal-header h2, .modal-footer h3 {
+    margin: 0;
+}
+.modal-header {
+    background-color: coral;
+    padding: 15px;
+    color: white;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.closeBtn {
+    color: white;
+    float: right;
+    font-size: 30px;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#gameFooter {
+    clear: both;
+}
+
+@keyframes modalOpen {
+    from {opacity: 0}
+    to {opacity: 1;}
+}
