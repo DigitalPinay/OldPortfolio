@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Therese Peterson - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="colorGame/colorGame.css" /> 
+    <link rel="stylesheet" type="text/css" media="screen" href="portfolio.css" />
+   
+
+</head>
+<body>
+    <div id="banner">
+        Therese Peterson<br>
+        Digital Portfolio
+    </div>
+    <section id="cmsExamples">
+        <h1 class="gallery">Full Sites Gallery</h1>
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="project-left">
+                    <img class="project-image" src="images/gallery/BSSU.png">
+                </div>
+                <div class="project-right">
+                    <div class="description">
+                        <span class="descHeader">Girl Scout SU</span><br>
+                        New site developed for public consumption and ease of sharing information 
+                        <br><br>
+                        <span class="exampleType">Created on Weebly</span> 
+                    </div>
+                    <div class="projectView">
+                        <a href="https://burnsvillesavagegs.weebly.com/">Go to site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-left">
+                    <img class="project-image" src="images/gallery/PCC.png">
+                </div>
+                <div class="project-right">
+                    <div class="description">
+                        <span class="descHeader">Philippine Children's Camp</span><br>
+                        Promotional site for camper registration and recruiting of volunteers
+                        <br><br>
+                        <span class="exampleType">Created on Google Sites </span> 
+                    </div>
+                    <div class="projectView">
+                        <a href="https://sites.google.com/view/csfamn-philippinechildrenscamp/">Go to site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-left">
+                    <img class="project-image" src="images/gallery/CSFA.png">
+                </div>
+                <div class="project-right">
+                    <div class="description"><span class="descHeader">CSFA</span><br>
+                        The site was used to share event schedule and distribution of flyers. 
+                        <br><br>
+                        <span class="exampleType">Coded in HTML/CSS</span>
+                    </div>
+                    <div class="projectView">
+                        <a href="https://digitalpinay.github.io/CSFA/">Go to site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-left">
+                    <img class="project-image" src="images/gallery/Aero.png">
+                </div>
+                <div class="project-right">
+                    <div class="description"><span class="descHeader">AeroAssemblies</span><br>
+                        Site redesign used as a class project.  Currently being revamped for publication on Github.
+                        <br><br>
+                        <span class="exampleType">Coded in HTML/CSS</span>
+                    </div>
+                    <div class="projectView">
+                        <a href="https://digitalpinay.github.io/AeroAssemblies/">Go to site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="jsExamples">
+        <h1 class="gallery">Interactive Gallery</h1>
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="project-left">
+                    <img class="project-image" src="images/gallery/ColorGame.png">
+                </div>
+                <div class="project-right">
+                    <div class="description">
+                        <span class="descHeader">Color Game</span><br>
+                        A javascript game where you select the color represented in RBG code.  Udemy.com project.
+                        <br><br>
+                        <span class="exampleType">JavaScript/jQuery</span>
+                    </div>
+                    <div class="projectView">
+                        <button id="modalBtn" class="button">Play Game</button>
+                    </div>
+                </div>
+                <div class="modal" id="openColorGame">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="closeBtn" id="closeBtn">&times;</span>
+                            <h2>JavaScript - Color Game </h2>
+                            
+                        </div>
+                        <div class="modal-body">
+                            <h1 id="gameHeader">The Great <br>
+                                <span id="colorDisplay">RGB</span> <br>
+                                Color Game</h1>
+                            <div id="stripe">
+                                <button id="resetButton" class="gameButtons">NEW COLORS</button>
+                                <span id="message"></span>
+                            
+                            
+                                <button class="mode gameButtons">EASY</button>
+                                <button class="mode gameButtons selected">HARD</button>
+                            </div>
+                            <div id="container">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                            </div>
+                            <div id="gameFooter"></div>
+                            <script src="colorGame/colorGame.js"></script>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <div class="project-item">
+                <div class="project-left">
+                    <img class="project-image" src="images/gallery/CSFA.png">
+                </div>
+                <div class="project-right">
+                    <div class="description"><span class="descHeader">HTML/CSS</span><br>
+                        This site was created for the cultural organization.
+                    </div>
+                    <div class="projectView">
+                        <a href="https://digitalpinay.github.io/CSFA/">Go to site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-left">
+                    <img class="project-image" src="images/gallery/Aero.png">
+                </div>
+                <div class="project-right">
+                    <div class="description"><span class="descHeader">HTML/CSS</span><br>
+                        Used a project for creating a static site.
+                    </div>
+                    <div class="projectView">
+                        <a href="https://digitalpinay.github.io/AeroAssemblies/">Go to site</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <script src="portfolio.js"></script>
+    
+</body>
+</html>
