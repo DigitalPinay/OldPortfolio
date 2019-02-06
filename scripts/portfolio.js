@@ -1,41 +1,61 @@
 $( document ).ready(function() {
 
-    //get modal event
+    //select modal event
+    // var modalList = document.querySelectorAll('.modal');
     var modal = document.getElementById('openColorGame');
-    // $( "#modalBtn" ).click(function(){
-    //      $("openColorGame").fadeIn(1000);    
-    // }
+    var modalInterview = document.getElementById('modalInterview');
 
     //Get open mdodal button 
-
     var modalBtn = document.getElementById('modalBtn');
+    var interviewBtn = document.getElementById('openInterview');
 
     // get close button
     var closeBtn = document.getElementById('closeBtn');
+    var interviewClose = document.getElementById('closeInterview');
 
-    modalBtn.addEventListener('click', openModal);
-    closeBtn.addEventListener('click', closeModal);
-    window.addEventListener('click', clickOutside);
 
-    function openModal() {
+    //open modal
+    modalBtn.addEventListener('click', function() {
         modal.style.display = 'block';
-        console.log("Open Sesame");
-    }
+    });
+
+    interviewBtn.addEventListener('click', function(){
+        modalInterview.style.display = 'block';
+        // console.log('open interview')
+    })
 
 
-    function closeModal(){
+    //close modal
+    closeBtn.addEventListener('click', function(){
         modal.style.display = 'none';
-        console.log("close Sesame");
-    }
+    });
 
-    function clickOutside(e){
+    interviewClose.addEventListener('click', function(){
+        modalInterview.style.display = 'none';
+    })
+
+    window.addEventListener('click', function (e){
         if (e.target == modal){
             modal.style.display = 'none';
+        } 
+        else if (e.target == modalInterview) {
+            modalInterview.style.display = 'none';
         }
         
-    }
+    });
 
-    $('#colorGameInsert').load("colorGame/colorGameInsert.html");
+
+    // console.log(modalList);
+
+
+    // function openModal() {
+    //     modal.style.display = 'block';
+    // }
+
+
+    
+
+    
 
 
 });
