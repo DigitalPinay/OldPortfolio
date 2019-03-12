@@ -30,14 +30,24 @@ button.button {
     font-size: 16px;
 }
 
-#banner {
+#banner-wrapper {
+    background-image: url('../images/htmlBanner.png');
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#title {
     border-radius: 25px;
     display: flex;
     font-size: 75px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 50px auto;
+    /* margin: 50px auto; */
+    display: inline-block;
     border: 15px ridge rgb(43, 27, 187);
     width: 600px;
     height: 200px;

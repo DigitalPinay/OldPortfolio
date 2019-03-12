@@ -1,9 +1,10 @@
 $( document ).ready(function() {
 
     //select modal event
-    // var modalList = document.querySelectorAll('.modal');
+    var modalList = document.querySelectorAll('.modal');
     var modal = document.getElementById('openColorGame');
     var modalInterview = document.getElementById('modalInterview');
+    var interviewVideo = document.getElementById('interview');
 
     //Get open mdodal button 
     var modalBtn = document.getElementById('modalBtn');
@@ -32,25 +33,28 @@ $( document ).ready(function() {
 
     interviewClose.addEventListener('click', function(){
         modalInterview.style.display = 'none';
+        interviewVideo.pause();
+        interviewVideo.currentTime = 0;
     })
 
+    //close modal clicking on window.
     window.addEventListener('click', function (e){
         if (e.target == modal){
             modal.style.display = 'none';
         } 
         else if (e.target == modalInterview) {
             modalInterview.style.display = 'none';
+            interviewVideo.pause();
+            interviewVideo.currentTime = 0;
         }
         
     });
 
 
-    // console.log(modalList);
+    console.log(modalList);
 
 
-    // function openModal() {
-    //     modal.style.display = 'block';
-    // }
+   
 
 
     
